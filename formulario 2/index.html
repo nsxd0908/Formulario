@@ -17,6 +17,7 @@
              <h1>Formulario de Registro</h1>
         </div>
     </header>
+  
     
     
     <section>
@@ -36,14 +37,26 @@
 
         <label for="correo">Correo:</label>
         <input type="text" id="correo" name="correo" required>
-        <button type="button" onclick="enviarFormulario()">Entrar</button>
-        <button>
+        <button type="button" id="miBoton" onclick="enviarFormulario()">Entrar</button>
+        <script>
+        document.getElementById("miBoton").addEventListener("click", function() {
+          window.location.href = "login.html"; // aquí va el nombre de tu página
+        });
+      </script>
+        <button id="miBoton" type="button">
             Iniciar sesión
         </button>
+        
 
           <p>
         ya tienes cuenta? 
        </p>
+
+       <script>
+        document.getElementById("miBoton").addEventListener("click", function() {
+          window.location.href = "login.html"; // aquí va el nombre de tu página
+        });
+      </script>
 
     
     </form>
