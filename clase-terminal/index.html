@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+
+ 
+</head>
+<body>
+    
+    <div>
+    <header>
+        <div>
+             <h1>Formulario de Registro</h1>
+        </div>
+    </header>
+  
+    
+    
+    <section>
+       
+    <form action="https://example.com/submit" method="POST">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" required>
+
+        <label for="ciudad">Ciudad:</label>
+        <input type="text" id="ciudad" name="ciudad" required>
+
+        <label for="estado">Estado:</label>
+        <input type="text" id="estado" name="estado" required>
+
+        <label for="correo">Correo:</label>
+        <input type="text" id="correo" name="correo" required>
+        <button type="button" id="miBoton2" onclick="enviarFormulario()">Entrar</button>
+        <script>
+        document.getElementById("miBoton2").addEventListener("click", function() {
+          window.location.href = "Inicio.html"; // aquí va el nombre de tu página
+        });
+      </script>
+        
+        <button id="miBoton" type="button">
+            Iniciar sesión
+        </button>
+        
+        <script>
+        document.getElementById("miBoton").addEventListener("click", function() {
+          window.location.href = "login.html"; // aquí va el nombre de tu página
+        });
+      </script>
+
+          <p>
+         ya tienes cuenta? 
+       </p>
+
+    </form>
+        </section>
+
+    
+</div>
+</body>
+</html>

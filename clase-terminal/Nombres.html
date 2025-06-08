@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Nombres.css">
+    <nav class="navbar">
+  <ul>
+    <li><a href="#">
+      <button type="button" id="miBoton3">Inicio</button></a></li>
+    <li><a href="#">
+        <script>
+        document.getElementById("miBoton3").addEventListener("click", function() {
+          window.location.href = "Principal.html"; // aquí va el nombre de tu página
+        });
+      </script>
+      <button id="nombres">Nombres</button></a></li>
+    <li><a href="#">
+
+      <button id="sobre">Sobre</button></a></li>
+    <li><a href="#">
+
+      <button id="mas">Mas</button></a></li>
+  </ul>
+</nav>
+  
+</head>
+<body>
+    <div class="contenedor">
+   <h1>⚔️ Generador de Nombres Épicos ⚔️</h1>
+
+    <button onclick="generarNombre()">Generar Nombre</button>
+
+    <p id="resultado">Haz clic en el botón para empezar...</p>
+  </div>
+  <!--link Javascript-->
+  <script src="./Nombres.js"></script>
+
+
+  
+</body>
+</html>

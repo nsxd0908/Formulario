@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #fcefee;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: #000000;
+}
+
+/* Fondo con burbujas flotantes */
+.fondo-bonito {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.burbuja {
+  position: absolute;
+  bottom: -100px;
+  background: rgb(187, 187, 187);
+  border-radius: 50%;
+  animation: flotar 20s infinite ease-in;
+}
+
+.burbuja:nth-child(1) {
+  width: 100px;
+  height: 100px;
+  left: 20%;
+  animation-duration: 25s;
+}
+.burbuja:nth-child(2) {
+  width: 150px;
+  height: 150px;
+  left: 40%;
+  animation-duration: 20s;
+}
+.burbuja:nth-child(3) {
+  width: 80px;
+  height: 80px;
+  left: 60%;
+  animation-duration: 18s;
+}
+.burbuja:nth-child(4) {
+  width: 120px;
+  height: 120px;
+  left: 75%;
+  animation-duration: 22s;
+}
+
+@keyframes flotar {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-1100vh); }
+}
+
+/* Contenido central */
+.contenido {
+  background-color: rgb(255, 255, 255);
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 1.2em;
+  margin-bottom: 25px;
+}
+
+button {
+  padding: 12px 25px;
+  background-color: #221e1e;
+  color: white;
+  border: none;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #0f0f0f;
+}

@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #ecc7c760,#a7a1a1, #ffffff);
+  background-size: 400% 400%;
+  animation: fondoAnimado 10s ease infinite;
+  color: #333;
+}
+
+@keyframes fondoAnimado {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Navbar */
+.navbar {
+  background-color: #111;
+  padding: 15px 0;
+  text-align: center;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #ff6b81;
+}
+
+/* Título */
+.titulo-juegos {
+  text-align: center;
+  margin: 40px 0 20px;
+  font-size: 3em;
+  color: #222;
+  text-shadow: 1px 1px 4px white;
+}
+
+/* Tarjetas */
+.juegos-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px 40px 60px;
+  gap: 40px;
+}
+
+.juego-card {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  padding: 30px;
+  width: 280px;
+  text-align: center;
+  transition: transform 0.4s, box-shadow 0.3s;
+}
+
+.juego-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.juego-card h2 {
+  margin-bottom: 15px;
+  font-size: 1.5em;
+}
+
+.juego-card p {
+  font-size: 1em;
+  margin-bottom: 25px;
+  color: #444;
+}
+
+/* Botón */
+.btn-jugar {
+  padding: 12px 25px;
+  background-color: #ff6b81;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 0 10px #ff6b81;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.btn-jugar:hover {
+  background-color: #e55065;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #ff6b81;
+}

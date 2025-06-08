@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Seccion</title>
+    <link rel="stylesheet" href="./login.css">
+    
+</head>
+<body>
+    <div>
+        <header>
+            <div>
+                 <h1>Inicio de Seccion</h1>
+            </div>
+</header>
+        
+        
+<section>
+           
+  <form action="https://example.com/submit" method="POST">
+            <label for="Usuario">Usuario:</label>
+            <input type="text" id="Usuario" name="Usuario" required>
+
+<label for="Contraseña">Contraseña:</label>
+<input type="password" id="contraseña" name="Contraseña" required>
+
+<button id="miBoton2" type="button">
+    Iniciar sesión
+</button>
+<script>
+    document.getElementById("miBoton2").addEventListener("click", function() {
+        window.location.href = "Inicio.html"; // aquí va el nombre de tu página
+    });
+</script>
+
+<p>
+    <a href="index.html">¿No tienes cuenta? Regístrate aquí</a>
+</p>
+</form>
+</section>
+    
+    
+</body>
+</html>
